@@ -1,0 +1,483 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Data Signal</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/album/album.css" rel="stylesheet">
+
+    <style>
+
+ body{margin-top:20px;}
+
+ /* =Jumbotron Main
+ -------------------------------------------------------------- */
+ .jumbotron.jumbotron-main {
+     height: 100%;
+ 	width: 100%;
+ 	font-family: 'Roboto', sans-serif;
+ 	color: #fff;
+ 	padding-top: 0;
+ 	padding-bottom: 0;
+ 	position: relative;
+ 	margin:0;
+ }
+
+ #particles-js {
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-image: url("");
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 50% 50%;
+ 	background: #b61924; /* Old browsers */
+  left:0px;
+
+
+
+
+
+ }
+
+ .jumbotron.jumbotron-main hr {
+ 	border-width: 1px 0px;
+     border-style: dotted none;
+     border-color: rgba(255, 255, 255, 0.35);
+     -moz-border-top-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     border-image: none;
+     width: 49px;
+     height: 4px;
+     text-align: center;
+     position: relative;
+     clear: both;
+ }
+
+ .jumbotron.jumbotron-main a {
+     color: #fff;
+ }
+
+ .center-vertically {
+     display: table-cell;
+     vertical-align: middle;
+     height: 100%;
+    padding-top:80px;
+     padding-bottom:80px;
+ }
+
+ .center-vertically-holder {
+ 	display: table;
+ 	height: 100%;
+ }
+
+ .scroll-indicator {
+ 	padding-top:6px;
+     display: inline-block;
+     width: 50px;
+ }
+
+ .arrow-scroll-indicator {
+ 	font-size: 10px;
+ 	color: rgba(255, 255, 255, 0.60);
+ }
+
+ .parallax-window {
+     background: transparent;
+ }
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+
+            <i class="far fa-chart-bar"></i> &nbsp;
+            <strong>Data signal</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+
+
+
+  <section class="jumbotron jumbotron-main" id="home">
+      <div id="particles-js"><canvas class="particles-js-canvas-el"></canvas></div><!-- /.particles div -->
+      <div class="container center-vertically-holder">
+      	<div class="center-vertically">
+      		<div class="col-sm-12  col-lg-12 text-center">
+      			<h1 class="scaleReveal" data-sr-id="46" style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+      				DATA SIGNAL</strong>
+      			</h1>
+      			<hr class="bottomReveal" data-sr-id="1" style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+      			<p class="bottomReveal" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">LOGIN</a>
+              <a href="#" class="btn btn-success my-2">SIGNUP</a>
+            </p>
+      			<a href="#ideology" data-id="ideology" class="scroll-link">
+      				<div class="scroll-indicator rotateBottomReveal" data-sr-id="40" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+      					<span class="ion-mouse"></span><br>
+      					<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+      				</div>
+      			</a>
+      		</div>
+
+      	</div>
+      </div>
+  </section>
+
+
+
+
+
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=BC2909&fg=eceeef&text=COFFEE" alt="COFFEE">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=09BC5D&fg=eceeef&text=BEER" alt="Beer">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">90,000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">40,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">4,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=PIZZA" alt="PIZZA">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=WINE" alt="wine">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text"><strong>Counter</strong></p>
+                  <h1><span class="badge badge-secondary">10,0000</span></h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+
+                      <a href=""><i class="fas fa-thumbs-up"></i>  <span class="badge badge-light">50,000</span></a>
+                      <a href=""><i class="fas fa-comment"></i> <span class="badge badge-light">5,000</span></a>
+                    </div>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>&copy; Data Signal 2018. All rights reserved</p>
+
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+
+    <script type="text/javascript">
+
+particlesJS("particles-js", {
+  "particles": {
+  "number": {
+    "value": 80,
+    "density": {
+      "enable": true,
+      "value_area": 800
+    }
+  },
+  "color": {
+    "value": "#ffffff"
+  },
+  "shape": {
+    "type": "circle",
+    "stroke": {
+      "width": 0,
+      "color": "#000000"
+    },
+    "polygon": {
+      "nb_sides": 5
+    },
+    "image": {
+      "src": "img/github.svg",
+      "width": 100,
+      "height": 100
+    }
+  },
+  "opacity": {
+    "value": 0.5,
+    "random": false,
+    "anim": {
+      "enable": false,
+      "speed": 1,
+      "opacity_min": 0.1,
+      "sync": false
+    }
+  },
+  "size": {
+    "value": 3,
+    "random": true,
+    "anim": {
+      "enable": false,
+      "speed": 40,
+      "size_min": 0.1,
+      "sync": false
+    }
+  },
+  "line_linked": {
+    "enable": true,
+    "distance": 150,
+    "color": "#ffffff",
+    "opacity": 0.4,
+    "width": 1
+  },
+  "move": {
+    "enable": true,
+    "speed": 6,
+    "direction": "none",
+    "random": false,
+    "straight": false,
+    "out_mode": "out",
+    "bounce": false,
+    "attract": {
+      "enable": false,
+      "rotateX": 600,
+      "rotateY": 1200
+    }
+  }
+},
+"interactivity": {
+  "detect_on": "canvas",
+  "events": {
+    "onhover": {
+      "enable": true,
+      "mode": "grab"
+    },
+    "onclick": {
+      "enable": true,
+      "mode": "push"
+    },
+    "resize": true
+  },
+  "modes": {
+    "grab": {
+      "distance": 140,
+      "line_linked": {
+        "opacity": 1
+      }
+    },
+    "bubble": {
+      "distance": 400,
+      "size": 40,
+      "duration": 2,
+      "opacity": 8,
+      "speed": 3
+    },
+    "repulse": {
+      "distance": 200,
+      "duration": 0.4
+    },
+    "push": {
+      "particles_nb": 4
+    },
+    "remove": {
+      "particles_nb": 2
+    }
+  }
+},
+"retina_detect": true
+});
+    </script>
+  </body>
+</html>
